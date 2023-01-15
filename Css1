@@ -1,0 +1,35 @@
+header{
+    margin: 0;
+    padding: 0;
+}
+
+header ul {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+}
+
+main article {
+    background-color: white;
+    flex: 2;
+}
+
+main aside {
+    background-color: red;
+    flex: 1;
+}
+
+main nav {
+    background-color: aqua;
+    flex: 1;
+}
+
+header, footer {
+    background-color: skyblue;
+    padding: 1rem 0;
+}
