@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox2</title>
+    <style>
+            * {
+                box-sizing: border-box;
+                color: rgb(12, 13, 13);
+            }
+            h2{
+                text-align: center;
+                padding: 1rem 1.5rem;
+
+            }
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+                margin: 0;
+            }
+            #main {
+                display: flex;
+                flex: 1;
+
+            }
+            #main > article {
+                flex: 1;
+                order: 1;
+                background-color: red;
+            }
+            #main > nav {
+                background: aliceblue;
+                height: 100vh;
+                width: 15em;
+                position: absolute;
+                top: 0;
+            }
+            #main > aside {
+                order: 2;
+                flex: 0 0 25vw ;
+                background-color: rgb(215, 224, 224);
+            }
+            header, footer {
+                background: rgb(218, 202, 182);
+                height: 20vh;
+                margin-left: 15em;
+            }
+            header, footer, article, aside {
+            padding: 1em;
+            }
+    </style>
+</head>
+<body>
+    <header>
+            <h2>Header<h2>
+    </header>
+<div id="main">
+    <article>
+            <h2>Article<h2>
+    </article>
+    <nav>
+            <h2>Nav<h2>
+    </nav>
+    <aside>
+            <h2>Aside<h2>
+    </aside>
+</div>
+    <footer>
+            <h2>Footer<h2>
+    </footer>
+</body>
+</html>
